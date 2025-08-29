@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intro_lutter/components/custom_card.dart';
-import 'package:intro_lutter/pages/counter_screen_page.dart';
 import 'package:intro_lutter/exemplos/Value_notifier_counter_screen.dart';
+import 'package:intro_lutter/exemplos/changed_notifier.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -21,12 +21,19 @@ class HomeScreen extends StatelessWidget {
               Expanded(
                 child: ListView(
                   children: [
-                    CustomCard(
-                        title: 'Contador',
-                        description: 'Exemplo contador',
-                        icon: Icons.add_circle_outline,
-                        destination: ValueNotifierCounterScreen()
-                        )
+          CustomCard(
+            title: 'Contador',
+            description: 'Exemplo contador',
+            icon: Icons.add_circle_outline,
+            destination: ValueNotifierCounterScreen(),
+          ),
+          SizedBox(height: 16),
+          CustomCard(
+            title: 'Perfil',
+            description: 'Exemplo com ChangedNotifier',
+            icon: Icons.change_circle_outlined,
+            destination: SimpleChangeNotifierExample(),
+          ),
                   ],
                 ),
               )

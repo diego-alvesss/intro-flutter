@@ -125,7 +125,7 @@ class _ValueNotifierCounterScreenState extends State<ValueNotifierCounterScreen>
                     ),
                     child: const Icon(Icons.remove),
                   ),
-                  const SizedBox(width: 20),
+                  const SizedBox(width: 32),
                   ElevatedButton(
                     onPressed: _resetCounter,
                     style: ElevatedButton.styleFrom(
@@ -134,7 +134,7 @@ class _ValueNotifierCounterScreenState extends State<ValueNotifierCounterScreen>
                     ),
                     child: const Icon(Icons.refresh),
                   ),
-                  const SizedBox(width: 20),
+                  const SizedBox(width: 32),
                   ElevatedButton(
                     onPressed: _incrementCounter,
                     style: ElevatedButton.styleFrom(
