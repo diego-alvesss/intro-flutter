@@ -1,4 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Permissões para localização/GPS -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Permissão para internet (necessária para carregar tiles do mapa) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    
     <application
         android:label="intro_lutter"
         android:name="${applicationName}"
